@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Animals({type,name,age}) {
   return (
@@ -8,4 +8,4 @@ function Animals({type,name,age}) {
   )
 }
 
-export default Animals
+export default Animals;

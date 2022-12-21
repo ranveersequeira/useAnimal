@@ -17,9 +17,10 @@ const animals = [...Array(250).keys()].map(id => {
         color: chance.color(),
     }
 })
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     const q = req.query.q?.toLowerCase() || ''
     const result = animals.filter(animal => animal.type.toLowerCase().includes(q))
+    console.log(result)
     res.send(result)
 }
 )
